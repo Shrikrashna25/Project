@@ -1,0 +1,42 @@
+2024-Dec-20 12:42:07 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:07 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:08 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:14 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:14 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:15 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:22 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:22 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:23 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:29 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:29 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:30 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:36 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:36 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:37 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:43 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:43 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:44 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
+2024-Dec-20 12:42:50 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2024-Dec-20 12:42:50 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2024-Dec-20 12:42:51 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!
