@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,7 +32,7 @@ public class ProductTest extends TestBase {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.pollingEvery(Duration.ofMillis(500));
 		Actions act = new Actions(driver);
-		WebElement KidsMenu = driver.findElement(By.xpath("//a[@href=\"/shop/kids\"]")); 
+		WebElement KidsMenu = driver.findElement(By.xpath("//a[@href=\"/shop/kids\"]"));
 		act.moveToElement(KidsMenu).perform();
 		By Tshirt = By.xpath("//a[@href=\"/shop/kids\"]/parent::div/descendant::ul/li[2]/a");
 		wait.until(ExpectedConditions.elementToBeClickable(Tshirt));
@@ -74,16 +75,15 @@ public class ProductTest extends TestBase {
 		String categoryCountInTxt = Keyword.getTextOf(Locator.categoryCnt);
 		int categoryCount = Format.extractNumberFrom(categoryCountInTxt);
 		Assert.assertEquals(titleCount, categoryCount, "Title count and category count are not same");
-        
+
 	}
-	
 
 	@Test /// Test case using Page Object Model
 	public void verifyCountOfItemsForKidsTShirtUsingPom() throws InterruptedException {
 
 		HomePage homepage = new HomePage();
 		homepage.hoverOnKidsMenu();
-		
+
 		homepage.waitForFlyout();
 		homepage.clickOnFlyoutMenuItem("T-Shirt");
 		StorePage storepage = new StorePage();
@@ -91,7 +91,39 @@ public class ProductTest extends TestBase {
 		String titleCount = storepage.getTitleCount();
 		String categoryCount = storepage.getCategoryCount();
 		Assert.assertEquals(titleCount, categoryCount, "Title count and category count are not same");
-       
+
+	}
+
+	@Test // To verifying Download Ebooks
+	public void verifyDownloadEbooks() {
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.orangehrm.com/");
+		driver.manage().window().maximize();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		wait.pollingEvery(Duration.ofMillis(500));
+		Actions act = new Actions(driver);
+		WebElement resources = driver.findElement(By.xpath("(//a[@class=\"nav-link-hed\"])[3]"));
+		act.moveToElement(resources).perform();
+		By eBook = By.xpath("//a[@href=\"/en/resources/e-books\"]");
+		wait.until(ExpectedConditions.elementToBeClickable(eBook));
+		driver.findElement(eBook).click();
+		WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(60));
+		WebElement Download = driver.findElement(By.xpath("//a[@href=\"/en/resources/e-books/thefutureofhr\"]"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(Download).perform();
+		Download.click();
+		System.out.println("Download click");
+		driver.findElement(By.xpath("//input[@type=\"email\"]")).sendKeys("gutte6015@gmail.com", Keys.ENTER);
+		System.out.println("mail id enter");
+		WebDriverWait wait11 = new WebDriverWait(driver, Duration.ofSeconds(60));
+		driver.findElement(By.xpath("//input[@id=\"Form_getForm_FullName\"]")).sendKeys("Shrikrashna", Keys.ENTER);
+		driver.findElement(By.xpath("//select[@name=\"Country\"]")).click();
+		driver.findElement(By.xpath("//option[@value=\"India\"]")).click();
+		driver.findElement(By.xpath("//div[@class=\"recaptcha-checkbox-checkmark\"]")).click();
+		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
+		System.out.println("Submit button click");
+		driver.quit();
+
 	}
 
 }

@@ -5,11 +5,9 @@
     <classes>
       <class name="com.testingshastra.testcases.ProductTest">
         <methods>
-          <include name="verifyCountofItemForKidsTshirtUsingFramwork"/>
+          <include name="verifyDownloadEbooks"/>
           <include name="setUp"/>
-          <include name="verifyCountofItemsForKidsTshirt"/>
           <include name="tearDown"/>
-          <include name="verifyCountOfItemsForKidsTShirtUsingPom"/>
         </methods>
       </class> <!-- com.testingshastra.testcases.ProductTest -->
     </classes>
