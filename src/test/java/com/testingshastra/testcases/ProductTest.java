@@ -125,5 +125,18 @@ public class ProductTest extends TestBase {
 		driver.quit();
 
 	}
+	
+	@Test
+	public void toVeriFyingLogin() {
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+		wait.pollingEvery(Duration.ofMillis(500));
+		
+		driver.findElement(By.xpath("//input[@name=\"username\"]")).sendKeys("Admin");
+		driver.findElement(By.xpath("//input[@name=\"password\"]")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+	}
 
 }

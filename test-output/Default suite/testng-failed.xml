@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testingshastra.testcases.ProductTest">
+      <class name="com.testingshastra.testcases.TestCaseOrangeHRM">
         <methods>
-          <include name="verifyDownloadEbooks"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="toVerifyLogin"/>
         </methods>
-      </class> <!-- com.testingshastra.testcases.ProductTest -->
+      </class> <!-- com.testingshastra.testcases.TestCaseOrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
