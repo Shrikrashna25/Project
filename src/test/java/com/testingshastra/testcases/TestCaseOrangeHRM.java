@@ -1,81 +1,107 @@
 package com.testingshastra.testcases;
 
-import java.time.Duration;
 
+
+import java.time.Duration;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import com.testingshastra.base.TestBase;
 
 public class TestCaseOrangeHRM {
 
-	@Test
-	public void toVerifyLogin() {
+    WebDriver driver;
 
-		ChromeDriver driver = new ChromeDriver();
+    @BeforeMethod
+    public void setUp() {
+        // Initialize the WebDriver
+        driver = new ChromeDriver();
 
-		try {
+        try {
+            // Open the login page
+            driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+            driver.manage().window().maximize();
 
-			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-			driver.manage().window().maximize();
+            // Explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-			// Define an explicit wait
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+            // Perform login
+            WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
+            usernameField.sendKeys("Admin");
 
-			// Wait for the username field to be visible
-			WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));
-			usernameField.sendKeys("Admin");
+            WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
+            passwordField.sendKeys("admin123");
 
-			// Wait for the password field to be visible and input password
-			WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
-			passwordField.sendKeys("admin123");
+            WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
+            loginButton.click();
 
-			// Wait for the login button to be clickable and then click
-			WebElement loginButton = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
-			loginButton.click();
+            // Wait for the dashboard
+            WebElement dashboardElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Dashboard']")));
+            Assert.assertTrue(dashboardElement.isDisplayed(), "Login failed: Dashboard not displayed");
 
-			// Wait for the dashboard or confirmation element to verify successful login
-			WebElement dashboardElement = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Dashboard']")));
+            System.out.println("Login functionality verified successfully!");
 
-			// Assert that the dashboard is displayed
-			Assert.assertTrue(dashboardElement.isDisplayed(), "Login failed: Dashboard not displayed");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("Setup failed due to an exception: " + e.getMessage());
+        }
+    }
 
-			System.out.println("Login functionality verified successfully!");
+    @Test(priority = 1)
+    public void verifyMyLeaves() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
-		} catch (Exception e) {
-			e.printStackTrace();
-			Assert.fail("Test failed due to an exception: " + e.getMessage());
-		} finally {
+            // Navigate to My Leave
+            WebElement leaveMenu = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Leave']")));
+            leaveMenu.click();
 
-			// driver.quit();
-		}
-	}
+            WebElement myLeaveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='My Leave']")));
+            myLeaveButton.click();
 
-	@Test
-	public void veriFyingMyLeaves() {
-		ChromeDriver driver = new ChromeDriver();
+            // Verify My Leave page
+            WebElement leavePageHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='My Leave']")));
+            Assert.assertTrue(leavePageHeader.isDisplayed(), "My Leave page not displayed");
 
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		driver.manage().window().maximize();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		WebElement User = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Username")));
-		User.sendKeys("Admin");
-		WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
-		password.sendKeys("admin123");
-		WebElement loginButton = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']")));
-		loginButton.click();
-		WebElement Leave = wait
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@title=\\\"My Leave\\\"]")));
-		Leave.click();
+            System.out.println("Successfully verified My Leave functionality.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("Test 'verifyMyLeaves' failed due to: " + e.getMessage());
+        }
+    }
 
-	}
+    @Test(priority = 2)
+    public void verifyClaimStatus() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
+            // Navigate to Claim Module
+            WebElement claimMenu = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Claim']")));
+            claimMenu.click();
+
+            // Verify Claim Status page
+            WebElement claimPageHeader = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Claims']")));
+            Assert.assertTrue(claimPageHeader.isDisplayed(), "Claim Status page not displayed");
+
+            System.out.println("Successfully verified Claim Status functionality.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("Test 'verifyClaimStatus' failed due to: " + e.getMessage());
+        }
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        // Quit the browser
+        if (driver != null) {
+            driver.quit();
+            System.out.println("Browser closed successfully.");
+        }
+    }
 }

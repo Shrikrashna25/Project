@@ -5,7 +5,9 @@
     <classes>
       <class name="com.testingshastra.testcases.TestCaseOrangeHRM">
         <methods>
-          <include name="toVerifyLogin"/>
+          <include name="verifyMyLeaves"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.testingshastra.testcases.TestCaseOrangeHRM -->
     </classes>
