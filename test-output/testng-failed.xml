@@ -6,6 +6,7 @@
       <class name="com.testingshastra.testcases.TestCaseOrangeHRM">
         <methods>
           <include name="verifyMyLeaves"/>
+          <include name="verifyClaimStatus"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

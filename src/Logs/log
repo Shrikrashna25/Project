@@ -1,2 +1,6 @@
-2025-Jan-13 10:50:42 [main] com.testingshastra.base.Keyword 
-  INFO  Launched url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-Feb-11 11:19:22 [main] com.testingshastra.base.Keyword 
+  INFO  Launched url: https://www.myntra.com
+2025-Feb-11 11:19:22 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser and Url is launched
+2025-Feb-11 11:19:36 [main] com.testingshastra.stepdefinitions.Hooks 
+  INFO  Browser is closed successfully..!

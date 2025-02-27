@@ -95,6 +95,21 @@ public class TestCaseOrangeHRM {
             Assert.fail("Test 'verifyClaimStatus' failed due to: " + e.getMessage());
         }
     }
+    
+    @Test(priority=3)
+    public void verifyTimeSheet() {
+    	
+    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+    	 WebElement Timehsheet = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@title=\"Timesheets\"]")));
+    	 Timehsheet.click();
+    	
+    	 
+    	WebElement Employ= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder=\"Type for hints...\"]")));
+    			Employ.sendKeys("rishan gohan gotenks");
+    			Employ.click();
+    			 System.out.println("Successfully verified Timesheet functionality");	
+    			
+    }
 
     @AfterMethod
     public void tearDown() {
