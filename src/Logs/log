@@ -1,6 +1,2 @@
-2025-Feb-11 11:19:22 [main] com.testingshastra.base.Keyword 
-  INFO  Launched url: https://www.myntra.com
-2025-Feb-11 11:19:22 [main] com.testingshastra.stepdefinitions.Hooks 
-  INFO  Browser and Url is launched
-2025-Feb-11 11:19:36 [main] com.testingshastra.stepdefinitions.Hooks 
+2025-Mar-13 11:05:02 [main] com.testingshastra.stepdefinitions.Hooks 
   INFO  Browser is closed successfully..!

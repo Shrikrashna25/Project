@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T11:38:04 IST" name="Default suite" finished-at="2025-02-14T11:40:31 IST" duration-ms="147584">
+  <suite started-at="2025-03-05T10:31:57 IST" name="Default suite" finished-at="2025-03-05T10:34:49 IST" duration-ms="172379">
     <groups>
     </groups>
-    <test started-at="2025-02-14T11:38:04 IST" name="Default test" finished-at="2025-02-14T11:40:31 IST" duration-ms="147584">
+    <test started-at="2025-03-05T10:31:57 IST" name="Default test" finished-at="2025-03-05T10:34:49 IST" duration-ms="172379">
       <class name="com.testingshastra.testcases.TestCaseOrangeHRM">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:38:04 IST" name="setUp" finished-at="2025-02-14T11:38:14 IST" duration-ms="9805" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:31:57 IST" name="setUp" finished-at="2025-03-05T10:32:14 IST" duration-ms="16953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyMyLeaves()[pri:1, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:38:14 IST" name="verifyMyLeaves" finished-at="2025-02-14T11:39:15 IST" duration-ms="60997" status="FAIL">
+        <test-method signature="verifyMyLeaves()[pri:1, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:32:14 IST" name="verifyMyLeaves" finished-at="2025-03-05T10:33:17 IST" duration-ms="62820" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test 'verifyMyLeaves' failed due to: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@title='My Leave'] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58224/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ee27ff50f0594a4805fd74be430380b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50529/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 869d7e38aef6675675ccc1efcf4a4a4d]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test 'verifyMyLeaves' failed due to: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@title='My Leave'] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58224/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2ee27ff50f0594a4805fd74be430380b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50529/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 869d7e38aef6675675ccc1efcf4a4a4d
 at org.testng.Assert.fail(Assert.java:110)
 at com.testingshastra.testcases.TestCaseOrangeHRM.verifyMyLeaves(TestCaseOrangeHRM.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -62,31 +62,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMyLeaves -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:39:15 IST" name="tearDown" finished-at="2025-02-14T11:39:15 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:33:17 IST" name="tearDown" finished-at="2025-03-05T10:33:17 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:39:15 IST" name="setUp" finished-at="2025-02-14T11:39:21 IST" duration-ms="6405" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:33:17 IST" name="setUp" finished-at="2025-03-05T10:33:34 IST" duration-ms="17380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyClaimStatus()[pri:2, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:39:21 IST" name="verifyClaimStatus" finished-at="2025-02-14T11:40:23 IST" duration-ms="61317" status="FAIL">
+        <test-method signature="verifyClaimStatus()[pri:2, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:33:34 IST" name="verifyClaimStatus" finished-at="2025-03-05T10:34:36 IST" duration-ms="61403" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test 'verifyClaimStatus' failed due to: Expected condition failed: waiting for visibility of element located by By.xpath: //h6[text()='Claims'] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58252/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 890e1968633fca35c1c6865a099059b0]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50585/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f93c311de551963b8dd9c192896641de]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test 'verifyClaimStatus' failed due to: Expected condition failed: waiting for visibility of element located by By.xpath: //h6[text()='Claims'] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58252/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 890e1968633fca35c1c6865a099059b0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50585/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f93c311de551963b8dd9c192896641de
 at org.testng.Assert.fail(Assert.java:110)
 at com.testingshastra.testcases.TestCaseOrangeHRM.verifyClaimStatus(TestCaseOrangeHRM.java:95)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -121,19 +121,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyClaimStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:40:23 IST" name="tearDown" finished-at="2025-02-14T11:40:23 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:34:36 IST" name="tearDown" finished-at="2025-03-05T10:34:36 IST" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:40:23 IST" name="setUp" finished-at="2025-02-14T11:40:29 IST" duration-ms="6453" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:34:36 IST" name="setUp" finished-at="2025-03-05T10:34:47 IST" duration-ms="10774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTimeSheet()[pri:3, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:40:29 IST" name="verifyTimeSheet" finished-at="2025-02-14T11:40:31 IST" duration-ms="1812" status="PASS">
+        <test-method signature="verifyTimeSheet()[pri:3, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:34:47 IST" name="verifyTimeSheet" finished-at="2025-03-05T10:34:49 IST" duration-ms="2281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTimeSheet -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-02-14T11:40:31 IST" name="tearDown" finished-at="2025-02-14T11:40:31 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testingshastra.testcases.TestCaseOrangeHRM@1f2586d6]" started-at="2025-03-05T10:34:49 IST" name="tearDown" finished-at="2025-03-05T10:34:49 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
