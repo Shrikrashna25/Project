@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testingshastra.testcases.TestCaseOrangeHRM">
+      <class name="com.testingshastra.runner.FeatureRunner">
         <methods>
-          <include name="verifyMyLeaves"/>
-          <include name="verifyClaimStatus"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 5 6 8"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.testingshastra.testcases.TestCaseOrangeHRM -->
+      </class> <!-- com.testingshastra.runner.FeatureRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
