@@ -1,12 +1,6 @@
-2025-Apr-02 12:20:02 [TestNG-PoolService-3] com.testingshastra.base.Keyword 
+2025-Jun-16 10:14:32 [main] com.testingshastra.base.Keyword 
   INFO  Launched url: https://www.myntra.com
-2025-Apr-02 12:20:02 [TestNG-PoolService-3] com.testingshastra.stepdefinitions.Hooks 
+2025-Jun-16 10:14:32 [main] com.testingshastra.stepdefinitions.Hooks 
   INFO  Browser and Url is launched
-2025-Apr-02 12:20:02 [TestNG-PoolService-3] com.testingshastra.stepdefinitions.Hooks 
-  INFO  Browser is closed successfully..!
-2025-Apr-02 12:20:03 [TestNG-PoolService-2] com.testingshastra.base.Keyword 
-  INFO  Launched url: https://www.myntra.com
-2025-Apr-02 12:20:03 [TestNG-PoolService-2] com.testingshastra.stepdefinitions.Hooks 
-  INFO  Browser and Url is launched
-2025-Apr-02 12:20:03 [TestNG-PoolService-2] com.testingshastra.stepdefinitions.Hooks 
+2025-Jun-16 10:14:53 [main] com.testingshastra.stepdefinitions.Hooks 
   INFO  Browser is closed successfully..!
