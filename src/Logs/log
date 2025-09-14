@@ -1,6 +1,6 @@
-2025-Jun-16 10:14:32 [main] com.testingshastra.base.Keyword 
+2025-Sept-13 11:47:35 [main] com.testingshastra.base.Keyword 
   INFO  Launched url: https://www.myntra.com
-2025-Jun-16 10:14:32 [main] com.testingshastra.stepdefinitions.Hooks 
+2025-Sept-13 11:47:35 [main] com.testingshastra.stepdefinitions.Hooks 
   INFO  Browser and Url is launched
-2025-Jun-16 10:14:53 [main] com.testingshastra.stepdefinitions.Hooks 
+2025-Sept-13 11:47:56 [main] com.testingshastra.stepdefinitions.Hooks 
   INFO  Browser is closed successfully..!
